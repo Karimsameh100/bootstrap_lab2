@@ -1,7 +1,12 @@
 body{
-    background-color: brown;
+    background-color: rgb(82, 35, 35);
 }
 h1{
     color: white;
     text-align: center;
 }
+h2{
+    color: white;
+    text-align: center;
+    background-color: blue;
+    }
