@@ -1,16 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    <h1>hello I'm karim</h1>
-    <h2>if you want to know more about this call me</h2>
+
+  <!--      -------------------------------Nav bar--------------------     -->
+  <nav class="navbar-nav">
+    <div class="container d-flex justify-content-between">
+      <div style="padding: 10px;">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-tree"></i> Hosto</a>
+
+      </div>
+      <div>
+        <ul class="nav justify-content-end">
+          <li class="nav-item border-top border-5 border-info" style="padding: 10px;">Home</li>
+          <li class="nav-item" style="padding: 15px;">About</li>
+          <li class="nav-item" style="margin: 15px;">Contact us</li>
+          <li class="nav-item" style="margin: 15px;">Layout</li>
+          <li class="nav-item" style="margin: 15px;">Plog</li>
+          <li class="nav-item" style="margin: 15px;">Portofilio</li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!--    -------------------------------Slider--------------------      -->
+  <div id="caro" class="carousel carousel-dark slide" style="width: 100%; height: 400px;">
+    <div class="carousel-indicators h-25">
+      <button type="button" data-bs-target="#caro" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#caro" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#caro" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="width: 100%; height: 300px;" data-bs-interval="300">
+      <div class="carousel-item active" data-bs-interval="300">
+        <img src="../sum1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="300">
+        <img src="../sum2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="300">
+        <img src="../sum3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#caro" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#caro" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 
-    <script src="./app.js"></script>
+  <!--     ---------------------------3 Container-------------------     -->
+  <div class="container d-flex flex-row flex-wrab justify-content-center align-items-center">
+    <div class="row">
+      <div class="col-md-4 mb-4 bg-teal-600">
+        <div class="bg-teal-500 rounded-circle d-flex justify-content-center align-items-center"
+          style="width: 60px; height: 60px;">
+          <img src="../like-icon-png.webp" class="rounded-circle" style="width: 50px; height: 50px;">
+        </div>
+        <p class="text-white text-center">Text</p>
+        <b class="text-white text-center d-flex justify-content-center align-items-center">Relabal</b>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+          velit? Amet qui odio consequatur, dignissimos reiciendis harum eveniet suscipit ipsam</p>
+
+      </div>
+      <div class="col-md-4 mb-4 bg-teal-500 ">
+        <div class="bg-teal-600 rounded-circle d-flex justify-content-center align-items-center"
+          style="width: 60px; height: 60px;">
+          <img src="../rocket.png" class="rounded-circle" style="width: 50px; height: 50px;">
+        </div>
+        <p class="text-white text-center">Text</p>
+        <b class="text-white text-center d-flex justify-content-center align-items-center">Quieck</b>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+          velit? Amet qui odio consequatur, dignissimos reiciendis harum eveniet suscipit ipsam</p>
+
+      </div>
+      <div class="col-md-4 mb-4 bg-teal-400 ">
+        <div class="bg-teal-500 rounded-circle d-flex justify-content-center align-items-center"
+          style="width: 60px; height: 60px;">
+          <img src="../customer.png" class="rounded-circle d-flex justify-content-center align-items-center"
+            style="width: 50px; height: 50px;">
+
+        </div>
+        <p class="text-white text-center">Text</p>
+        <b class="text-white text-center d-flex justify-content-center align-items-center">Customer</b>
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+          velit? Amet qui odio consequatur, dignissimos reiciendis harum eveniet suscipit ipsam</p>
+
+      </div>
+    </div>
+  </div>
+
+  <!--    -----------------------------Hosto Plans------------------     -->
+  <div class="container">
+    <div>
+      <h2 class="text-center" style="margin: 20px;font-size: 50px;">Hosto <b class="text-info">Plans</b> & <b
+          class="text-info">Pricing</b></h2>
+    </div>
+    <div class="d-flex flex-wrap justify-content-around">
+      <div class="bg1">
+        <h5 class="text-center bg-teal-400 text-white">Web Hosting</h5>
+        <div class="d-flex justify-content-center ">
+          <b>$ <b style="font-size: 50px;">4</b></b>
+          <div class="d-flex flex-column">
+            <b style="font-size: 30px;">.45</b>
+            <p>&nbsp;/months</p>
+
+          </div>
+        </div>
+        <ul class="list-group list-group-flush form-check custom-checkbox d-flex flex-start">
+
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> 1GB Storage</li>
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> Unlimited Bandwidth
+          </li>
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> Free SSL Certificate
+          </li>
+        </ul>
+        <button type="button" class="bg-teal-400 w-100 border-0">Sign up</button>
+      </div>
+      <div class="bg1">
+        <h5 class="text-center bg-teal-400 text-white">VPN Hosting</h5>
+        <div class="d-flex justify-content-center ">
+          <b>$ <b style="font-size: 50px;">7</b></b>
+          <div class="d-flex flex-column">
+            <b style="font-size: 30px;">.85</b>
+            <p>&nbsp;/months</p>
+
+          </div>
+        </div>
+        <ul class="list-group list-group-flush form-check custom-checkbox d-flex flex-start">
+
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> 1GB Storage</li>
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> Unlimited Bandwidth
+          </li>
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> Free SSL Certificate
+          </li>
+        </ul>
+        <button type="button" class="bg-teal-400 w-100 border-0">Sign up</button>
+      </div>
+      <div class="bg1">
+        <h5 class="text-center bg-teal-400 text-white">Local Hosting</h5>
+        <div class="d-flex justify-content-center ">
+          <b>$ <b style="font-size: 50px;">9</b></b>
+          <div class="d-flex flex-column">
+            <b style="font-size: 30px;">.25</b>
+            <p>&nbsp;/months</p>
+
+          </div>
+        </div>
+        <ul class="list-group list-group-flush form-check custom-checkbox d-flex flex-start">
+
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> 1GB Storage</li>
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> Unlimited Bandwidth
+          </li>
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> Free SSL Certificate
+          </li>
+        </ul>
+        <button type="button" class="bg-teal-400 w-100 border-0">Sign up</button>
+      </div>
+      <div class="bg1">
+        <h5 class="text-center bg-teal-400 text-white">Basic</h5>
+        <div class="d-flex justify-content-center ">
+          <b>$ <b style="font-size: 50px;">3</b></b>
+          <div class="d-flex flex-column">
+            <b style="font-size: 30px;">.85</b>
+            <p>&nbsp;/months</p>
+
+          </div>
+        </div>
+        <ul class="list-group list-group-flush form-check custom-checkbox d-flex flex-start">
+
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> 1GB Storage</li>
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> Unlimited Bandwidth
+          </li>
+          <li class="list-group-item"><img src="../true1.png" alt="" width="30px" height="30px"> Free SSL Certificate
+          </li>
+        </ul>
+        <button type="button" class="bg-teal-400 w-100 border-0">Sign up</button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!--   ----------------------------------Key Fetures--------------     -->
+  <h2 class="text-center" style="margin-top: 40px; font-size: 50px;">Key Featuers of <b class="text-info">Hosto</b></h2>
+  <div class="container " style="margin-top: 40px; ">
+    <div class="row">
+      <div class="card col-lg-3 col-md-5 col-sm-12 offset-1" style="margin-top: 30px;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5 class="card-title">Web Hosting</h5>
+          <span
+            class="position-absolute top-0 start-100 translate-middle p-2 bg1 border border-light rounded-circle text-center "
+            style="padding: 10px;">Starting<p class="text-danger text-center">$1.99</p></span>
+        </div>
+        <div class="card-body d-flex flex-row align-items-start">
+          <div class="card-text-and-button">
+            <p class="card-text">use fast real improved version of our new software
+              to be whit all knowladge with this new featers buy it now.</p>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+          <img src="../webHosting.jpg" class="card-img-bottom w-50 h-26">
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-5 col-sm-12 offset-1" style="margin-top: 30px;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5 class="card-title">Web Hosting</h5>
+          <span
+            class="position-absolute top-0 start-100 translate-middle p-2 bg1 border border-light rounded-circle text-center "
+            style="padding: 10px;">Starting<p class="text-danger text-center">$1.99</p></span>
+        </div>
+        <div class="card-body d-flex flex-row align-items-start">
+          <div class="card-text-and-button">
+            <p class="card-text">use fast real improved version of our new software
+              to be whit all knowladge with this new featers buy it now.</p>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+          <img src="../webHosting.jpg" class="card-img-bottom w-50 h-26">
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-5 col-sm-12 offset-1" style="margin-top: 30px;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5 class="card-title">Web Hosting</h5>
+          <span
+            class="position-absolute top-0 start-100 translate-middle p-2 bg1 border border-light rounded-circle text-center "
+            style="padding: 10px;">Starting<p class="text-danger text-center">$1.99</p></span>
+        </div>
+        <div class="card-body d-flex flex-row align-items-start">
+          <div class="card-text-and-button">
+            <p class="card-text">use fast real improved version of our new software
+              to be whit all knowladge with this new featers buy it now.</p>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+          <img src="../webHosting.jpg" class="card-img-bottom w-50 h-26">
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-5 col-sm-12 offset-1" style="margin-top: 30px;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5 class="card-title">Web Hosting</h5>
+          <span
+            class="position-absolute top-0 start-100 translate-middle p-2 bg1 border border-light rounded-circle text-center "
+            style="padding: 10px;">Starting<p class="text-danger text-center">$1.99</p></span>
+        </div>
+        <div class="card-body d-flex flex-row align-items-start">
+          <div class="card-text-and-button">
+            <p class="card-text">use fast real improved version of our new software
+              to be whit all knowladge with this new featers buy it now.</p>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+          <img src="../webHosting.jpg" class="card-img-bottom w-50 h-26">
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-5 col-sm-12 offset-1" style="margin-top: 30px;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5 class="card-title">Web Hosting</h5>
+          <span
+            class="position-absolute top-0 start-100 translate-middle p-2 bg1 border border-light rounded-circle text-center "
+            style="padding: 10px;">Starting<p class="text-danger text-center">$1.99</p></span>
+        </div>
+        <div class="card-body d-flex flex-row align-items-start">
+          <div class="card-text-and-button">
+            <p class="card-text">use fast real improved version of our new software
+              to be whit all knowladge with this new featers buy it now.</p>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+          <img src="../webHosting.jpg" class="card-img-bottom w-50 h-26">
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-md-5 col-sm-12 offset-1" style="margin-top: 30px;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5 class="card-title">Web Hosting</h5>
+          <span
+            class="position-absolute top-0 start-100 translate-middle p-2 bg1 border border-light rounded-circle text-center "
+            style="padding: 10px;">Starting<p class="text-danger text-center">$1.99</p></span>
+        </div>
+        <div class="card-body d-flex flex-row align-items-start">
+          <div class="card-text-and-button">
+            <p class="card-text">use fast real improved version of our new software
+              to be whit all knowladge with this new featers buy it now.</p>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+          <img src="../webHosting.jpg" class="card-img-bottom w-50 h-26">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--     ---------------------------Footer------------------------     -->
+  <footer>
+    <div class="d-flex flex-row flex-wrap flex-start" style="width: 100%;">
+      <div class="d-flex flex-column" style="width:25%;">
+        <b>About us</b>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto incidunt alias velit neque modi nulla
+          cupiditate ullam porro, </p>
+        <ul>
+
+          <li class="list-group-item"> <i class="fa-solid fa-house" style="color: #63E6BE;"> </i> Home</li>
+          <li class="list-group-item"> <i class="fa-solid fa-phone" style="color: #63E6BE;"> </i> Phone</li>
+          <li class="list-group-item"> <i class="fa-solid fa-envelope" style="color: #63E6BE;"> </i>
+            hosto@owlTemplet.com</li>
+        </ul>
+      </div>
+
+
+
+      <div style="margin-left: 30px;">
+        <b>Navigation</b>
+        <ul>
+          <li>webHosting</li>
+          <li>Relase</li>
+          <li>VPN hosting</li>
+          <li>Features</li>
+          <li>Domain Registration</li>
+          <li>Servers</li>
+        </ul>
+      </div>
+
+
+
+      <div>
+        <b>Resent Posts</b>
+        <ul>
+          <li>webHosting</li>
+          <li>Relase</li>
+          <li>VPN hosting</li>
+          <li>Features</li>
+          <li>Domain Registration</li>
+          <li>Servers</li>
+        </ul>
+      </div>
+
+      <div>
+        <b>links</b>
+        <ul>
+          <li>webHosting</li>
+          <li>Relase</li>
+          <li>VPN hosting</li>
+          <li>Features</li>
+          <li>Domain Registration</li>
+          <li>Servers</li>
+        </ul>
+      </div>
+
+      <div style="width: 25%; margin-left: 20px;">
+        <b>Tags</b>
+        <div class="d-flex flex-row flex-wrap ">
+          <button class="btn btn-info">Busniss</button>
+          <button class="btn btn-info">Portofilio</button>
+          <button class="btn btn-info">links</button>
+          <button class="btn btn-info">Grow</button>
+          <button class="btn btn-info">Templates</button>
+          <button class="btn btn-info">Servars</button>
+          <button class="btn btn-info">Clean</button>
+          <button class="btn btn-info">WordPrase</button>
+          <button class="btn btn-info">Busniss</button>
+          <button class="btn btn-info">Busniss</button>
+          <button class="btn btn-info">Busniss</button>
+
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="./bootstrap/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

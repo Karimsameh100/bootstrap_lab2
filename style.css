@@ -1,12 +1,46 @@
-body{
-    background-color: rgb(82, 35, 35);
-}
-h1{
-    color: white;
-    text-align: center;
-}
-h2{
-    color: white;
-    text-align: center;
-    background-color: blue;
+.bg-teal-500 { background-color: #38b2ac; 
+    color: #38b2ac;}
+    .bg-teal-400 { background-color: #4fd1c5;
+    color: #ffffff; }
+    .bg-teal-600 { background-color: #319795; }
+    
+    .bg1{
+        background-color: #eeeeee;
+    }
+    
+    .custom-checkbox .form-check-input:checked {
+        background-color: green; 
+        border-color: greenyellow; 
+      }
+    
+    
+    .card-img-bottom {
+        position: absolute;
+        bottom: 10px; 
+        right: 1px;
+        width: 25%;
+        height: 25%;
+        
+    }
+    nav{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    footer{
+        background-color: #2d2d3a;
+        color: #fff2f2;
+        margin-top: 40px;
+        padding: 20px;
+        
+    }
+    
+    footer>div>div>b{
+        color: #dcdcdc51;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    footer>div>div>div>button{
+        margin: 5px;
     }
